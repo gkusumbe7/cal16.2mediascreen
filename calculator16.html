@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+        .calculator-container{
+                height:550px;
+                width: 350px;
+                /* background-color: rgb(11, 66, 66); */
+                background: linear-gradient(rgb(11, 107, 126), rgb(2, 48, 26));
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 100px;
+                border-radius: 15px;
+        }
+        .container-screen{
+            margin-left: auto;
+            margin-right: auto;    
+        }
+        .barand-name{
+            color: aqua;
+            margin-left:10px;
+            padding-top:10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: block;
+        }
+        .calculator-screen{
+            width:300px;
+            height:100px;
+            border-radius:10px;
+            margin-left:20px;
+            margin-top:5px;
+            font-size: 35px;
+            color: rgb(31, 240, 240);
+            background-color: rgb(7, 17, 37);
+            border-color: rgb(19, 204, 241);
+        }
+        .button-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around; 
+
+        }
+        .cal-button{
+            /* background-color: rgb(199, 245, 247); */
+            background: linear-gradient(rgb(209, 235, 240), rgb(116, 231, 176));
+            height: 55px;
+            width: 55px;
+            font-size:25px;
+            border-radius:8px;    
+            margin:10px;     
+            font-weight: bold;  
+            cursor: pointer;           
+        }
+        .cal-button:hover{
+            box-shadow: 0 2px 5px rgb(74, 238, 238);
+            transition:0.1s;
+        }
+        .bg-button{
+            /* background-color: rgb(6, 204, 161); */
+            background: linear-gradient(rgb(14, 194, 230), rgb(11, 233, 125));
+        }
+    </style>
+</head>
+<body>
+     <div class="calculator-container">
+        <p class="barand-name"><b>GK</b></p>
+        <input type="text" class="calculator-screen">
+        <div class="button-container">
+            <button class="cal-button">7</button>
+            <button class="cal-button">8</button>
+            <button class="cal-button">9</button>
+            <button class="cal-button bg-button">AC</button>
+        </div>
+        <div class="button-container">
+            <button class="cal-button">4</button>
+            <button class="cal-button">5</button>
+            <button class="cal-button">6</button>
+            <button class="cal-button bg-button">+</button>
+        </div>
+        <div class="button-container">
+            <button class="cal-button">1</button>
+            <button class="cal-button">2</button>
+            <button class="cal-button">3</button>
+            <button class="cal-button bg-button">-</button>
+        </div>
+        <div class="button-container">
+            <button class="cal-button">3</button>
+            <button class="cal-button">2</button>
+            <button class="cal-button">1</button>
+            <button class="cal-button bg-button">*</button>
+        </div>
+        <div class="button-container">
+            <button class="cal-button">0</button>
+            <button class="cal-button">00</button>
+            <button class="cal-button bg-button">.</button>
+            <button class="cal-button bg-button">=</button>
+        </div>
+     </div>
+</body>
+</html>
