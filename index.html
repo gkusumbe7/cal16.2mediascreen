@@ -1,44 +1,131 @@
-<html>
-    <head>
-        <title>
-            Hobbies Page
-        </title>
-    </head>
-    <body>
-        <h1>
-            <hr> Hobbies <img src="img/mental-health.png" height="40px"> 
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            <a href="index.html"><img src="img/home-button.png" height="40px"></a>
-            <hr>
-        </h1>
-        <h2>Travelling</h2>
-        <p><b> whether it is to another country or just the town next to yours – is a unique and enriching
-            experience that offers a much-needed escape from the challenges of everyday life. You get to explore new places, interact with people different from you, and grow as a process. 
-           A hobby </b></p>
-           <img src="img/travel.webp" height="200px"> <br/>
-           <b>
-           1.Shree Ganesh Mandir Tekdi.<br/>
-           2.Swaminarayan Temple.<br/>
-           3.Nagpur Ramtek Temple.<br/>
-           4.Deeksha Bhoomi. 230.<br/>
-           5.Koradi Temple. Points of Interest & Landmarks.<br/>
-           6.Zero Mile Marker.<br/>
-           7.Adasa Ganpati Temple. Points of Interest & Landmarks.<br/>
-           8.Khindsi Lake.<br/>
-        </b></b>
-        <h2>Photography or videography</h2>
-        <p><b>
-            Don't just take selfies on your trip; try your hand at professional photography. You can use your smartphone or carry around a small camera with you.
-            Some smartphones will give you more or less the same capabilities as professional cameras will. 
-            Take photos of the landscape, museums, or any other fascinating features. To make it more appealing, learn how to edit photos or videos and try creating professional-level content.
-            You can use your photos or videos as a journal for your travels. 
-            Your videos can also make wonderful keepsakes for all the new friends you may meet on your trips or for your family back home.
-      </b></p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+        .calculator-container{
+                height:550px;
+                width: 350px;
+                /* background-color: rgb(11, 66, 66); */
+                background: linear-gradient(rgb(11, 107, 126), rgb(2, 48, 26));
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 100px;
+                border-radius: 15px;
+        }
+        .barand-name{
+            color: aqua;
+            margin-left:10px;
+            padding-top:10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: block;
+        }
+
+        .calculator-screen{
+            width:300px;
+            height:100px;
+            border-radius:10px;
+            margin-left:20px;
+            margin-top:5px;
+            font-size: 35px;
+            color: rgb(31, 240, 240);
+            background-color: rgb(7, 17, 37);
+            border-color: rgb(19, 204, 241);
+        }
+
+        .button-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around; 
+
+        }
+
+        .cal-button{
+            /* background-color: rgb(199, 245, 247); */
+            background: linear-gradient(rgb(209, 235, 240), rgb(116, 231, 176));
+            height: 55px;
+            width: 55px;
+            font-size:25px;
+            border-radius:8px;    
+            margin:10px;     
+            font-weight: bold;  
+            cursor: pointer;           
+        }
+
+        .cal-button:hover{
+            box-shadow: 0 2px 5px rgb(105, 241, 241);
+            transition:0.1s;
+        }
+
+        .bg-button{
+            /* background-color: rgb(6, 204, 161); */
+            background: linear-gradient(rgb(14, 194, 230), rgb(11, 233, 125));
+        }
+
+
+        /* Media Screen */
+        /* Media Screen */
+        @media screen and (max-width:500px) {
+            .calculator-screen{
+            width:300px;
+            height:100px;
+            border-radius:10px;
+            margin-left:20px;
+            margin-top:5px;
+            font-size: 35px;
+            color: rgb(8, 22, 1);
+            background-color: rgb(162, 167, 105);
+            border-color: rgb(19, 204, 241);
+        }
+
+            .calculator-container{
+                height:550px;
+                width: 350px;
+                /* background-color: rgb(11, 66, 66); */
+                background: linear-gradient(rgb(146, 214, 228), rgb(101, 233, 84));
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 100px;
+                border-radius: 15px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+     <div class="calculator-container">
+        <p class="barand-name"><b>GK</b></p>
+        <input type="text" class="calculator-screen">
+        <div class="button-container">
+            <button class="cal-button">7</button>
+            <button class="cal-button">8</button>
+            <button class="cal-button">9</button>
+            <button class="cal-button bg-button">AC</button>
+        </div>
+        <div class="button-container">
+            <button class="cal-button">4</button>
+            <button class="cal-button">5</button>
+            <button class="cal-button">6</button>
+            <button class="cal-button bg-button">+</button>
+        </div>
+        <div class="button-container">
+            <button class="cal-button">1</button>
+            <button class="cal-button">2</button>
+            <button class="cal-button">3</button>
+            <button class="cal-button bg-button">-</button>
+        </div>
+        <div class="button-container">
+            <button class="cal-button">3</button>
+            <button class="cal-button">2</button>
+            <button class="cal-button">1</button>
+            <button class="cal-button bg-button">*</button>
+        </div>
+        <div class="button-container">
+            <button class="cal-button">0</button>
+            <button class="cal-button">00</button>
+            <button class="cal-button bg-button">.</button>
+            <button class="cal-button bg-button">=</button>
+        </div>
+     </div>
+</body>
 </html>
